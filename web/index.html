@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+       
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="static/css/estilos.css">
+    <script src="static/js/http.js" defer></script>
+    <script src="static/js/main.js" defer></script>
+    <title>Base64</title>
+    </head>
+    <body>
+          <div class="container">
+        <h1 class="titulo">Codificando imagenes en base64</h1>
+        <form action="">
+            <fieldset>
+                <legend>Seleccionar IMG</legend>
+                <input type="file" id="selectFile">
+                <div id="thumb">
+                    <figure id="thumb-template">
+                        <!-- <img id="img" height="150"> -->
+                    </figure>   
+                </div>
+            </fieldset>
+        </form>
+        <fieldset>
+            <legend>TextoIMG base64</legend>
+        <textarea name="base64" id="base64" cols="89" rows="14"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>File Info</legend>
+            <div id="info"></div>
+        </fieldset>
+        <fieldset>
+            <legend>Traer Imagenes</legend>
+            <button id="btn-traer">Traer Imagenes</button>
+        </fieldset>
+        <div id="template-img"></div>
+    </div>
+    </body>
+</html>
